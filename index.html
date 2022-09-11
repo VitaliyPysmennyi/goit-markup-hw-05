@@ -22,7 +22,7 @@
                 <a class="nav-link links" href="./index.html">Web<span class="nav-logo">Studio</span></a>
 				<ul class="list nav-list">
 					<li class="list-item">
-						<a class="item-link links" href="./index.html"><span class="link-blue">Студія</span></a>
+						<a class="item-link links link-current" href="./index.html"><span class="link-blue">Студія</span></a>
 					</li>
 					<li class="list-item">
 						<a class="item-link links" href="./portfolio.html">Портфоліо</a>
@@ -59,7 +59,7 @@
 				<h1 class="title">
 					Ефективні рішення для вашого бізнесу
 				</h1>
-				<button class="button" type="button">Замовити послугу</button>
+				<button class="button" type="button" data-modal-open>Замовити послугу</button>
 			  </div>
 			</section>
 			<!--Особливасті-->
@@ -112,13 +112,28 @@
 				<h2 class="subject">Чим ми займаємося</h2>
 				<ul class="list list-work-process">
 					<li class="item-work-process">
+            <div class="work-container">
 						<img class="picture-work-process" src="./images/img.jpg" alt="людина працює на комп'ютері" width="370" />
+            <p class="work-text">
+              Десктопні додатки
+            </p>
+            </div>
 					</li>
 					<li class="item-work-process">
+            <div class="work-container">
 						<img class="picture-work-process" src="./images/img-1.jpg" alt="людина працює на ноутбуці, тримаючи у руці смартфон" width="370" />
+            <p class="work-text">
+              Мобільні додатки
+            </p>
+            </div>
 					</li>
 					<li class="item-work-process">
+            <div class="work-container">
 						<img class="picture-work-process" src="./images/img-2.jpg" alt="людина працює на планшеті" width="370" />
+            <p class="work-text">
+              Дизайнерські рішення
+            </p>
+            </div>
 					</li>
 				</ul>
 				</div>
@@ -487,5 +502,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+       <div class="modal">
+<button class="modal-btn" type="button" data-modal-close>
+<svg class="close-icon" width="18" height="18">
+                    <use href="./images/icons/icons.svg#close-black"></use>
+                  </svg>
+</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 	</body>
 </html>
